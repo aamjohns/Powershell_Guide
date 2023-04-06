@@ -1,3 +1,5 @@
+#Help
+
 ### Introduction
 
 Two groups of IT pros were given a written test without access to a computer to determine their skill level with PowerShell. PowerShell beginners were placed in one group and experts in another. Based on the results of the test, there didn't seem to be much difference in the skill level between the two groups. Both groups were given a second test similar to the first one. This time they were given access to a computer with PowerShell that didn't have access to the internet. The results of the second test showed a huge difference in the skill level between the two groups. Experts don't always know the answers, but they know how to figure out the answers.
