@@ -28,10 +28,14 @@ foreach ($service in $services) {
 ```
 While we are here I want to discuss something I used in the script above.  It is called a subexpression.  It is when you surround an expression with `$( )`.  So in the above code `$($service.Name)`.  The reason we do this is to include the result of an expression, such as accessing an object's property, within a double-quoted string.  You don't need to use a subexpression here:
 ```
-$result = myString.ToUpper()
+$result = $myString.ToUpper()
 ```
 But in a quoted Write-Host statement, property values of object are not evaluated.  To ensure the property value of the object is evaluated we create the subexpression.
-
+```
+# This uses subexpression
+$myString = "Hello World"
+Write-Host "Setting myString to all upper case: $($myString.ToUpper())"
+```
 Just know, you should use a subexpression when you need to include the result of an expression, like a calculation or property access, within a double-quoted string.
 
 Back to our script.  You copy pasted the code above into your script editor, gave the script a name, and saved it.
