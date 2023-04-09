@@ -84,4 +84,4 @@ PowerShell is a powerful scripting language and command-line shell developed by 
 
 •	[Examples of Real-World PowerShell Use Cases](Use_Cases.md)
 
-<img src="images/author2.jpg" alt="Author" width="1025">
+[Author](images/author2.jpg)
