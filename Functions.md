@@ -53,7 +53,7 @@ Output in the console
 ```
 CONVERT THIS TEXT
 ```
-In the above we defined a new function named Convert-ToUpperCase and defined that it takes one parameter, `$stringValue`.  When we go to use the function the parameter name will be the parameter name we defined without the dollar sign.  We defined the parameter as $stringValue but to use it is -stringValue.
+In the above we defined a new function named `Convert-ToUpperCase` and defined that it takes one parameter, `$stringValue`.  When we go to use the function the parameter name will be the parameter name we defined without the dollar sign.  We defined the parameter as `$stringValue` but to use it is `-stringValue`.
 
 ### Returning values
 
@@ -63,7 +63,7 @@ For example, if I do this:
 
 `$result = Convert-ToUpperCase -stringValue "this text was lower case"`
 
-Convert-ToUpperCase function takes our input string "this text was lower case" and returns the upper case version.  This 'return' is stored in the variable $result.  If we want to see what the function returned to $result, just type `$result` or run `Write-Host $result`
+`Convert-ToUpperCase` function takes our input string `"this text was lower case"` and returns the upper case version.  This 'return' is stored in the variable `$result`.  If we want to see what the function returned to `$result`, just type `$result` or run `Write-Host $result`
 
 As stated earlier, functions can be defined to take multiple parameters
 ```
