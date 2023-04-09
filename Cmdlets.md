@@ -1,16 +1,30 @@
 # Cmdlets
 
+PowerShell relies on cmdlets as the primary building blocks for executing tasks and managing various aspects of the system. Cmdlets, short for "command-lets," are specialized .NET classes that perform specific actions on a given target, following a consistent verb-noun naming convention. This section will introduce you to the fundamentals of cmdlets, including their syntax, how to use them with parameters, and the concept of pipelining, which allows you to chain cmdlets together for more complex operations.
+
 ### Basics
 
-cmdlets are commands used in PowerShell, consisting of a verb-noun syntax (e.g., Get-ChildItem, New-Item, Set-Location). 
+Cmdlets are the primary commands used in PowerShell, designed to be easy to read and understand. They follow a consistent verb-noun naming structure that makes it simple to recognize their purpose and functionality. The verb in the cmdlet's name represents the action it performs, while the noun represents the resource or object it acts upon. This naming convention allows users to quickly comprehend the cmdlet's purpose and anticipate its behavior.
 
-Cmdlets are designed to be easy to read and understand.
+For example, let's consider the cmdlet `Get-Service`. The verb "Get" indicates that the cmdlet retrieves information, while the noun "Service" specifies that the information pertains to system services. Therefore, Get-Service retrieves a list of all services running on the system.
 
-cmdlets follow a verb-noun naming structure.  Microsoft recommends certain verbs be used rather than others:
+Another example is the cmdlet `Set-Location`, which has the verb "Set" and the noun "Location." This cmdlet sets or changes the current working directory within the PowerShell environment.
+
+Microsoft has a list of approved verbs for use with cmdlets to maintain consistency and clarity across the PowerShell ecosystem. You can view the list of approved verbs by running the Get-Verb cmdlet or referring to the Microsoft documentation.
 
 [Approved Verbs MS Doc](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.3) or run the PowerShell cmdlet `Get-Verb`
 
 To use a cmdlet you call it by name.  For example, if I run the cmdlet `Get-Service`, I will get a listing of all services on my system.
+
+Here are a few more examples of common cmdlets and their verb-noun structures:
+
+`Get-ChildItem` Retrieves a list of child items (such as files and directories) from a specified location.
+
+`New-Item` Creates a new item, such as a file, directory, or registry key.
+
+`Remove-Item` Deletes an item, like a file, directory, or registry key.
+
+`Import-Csv` Imports data from a CSV file into PowerShell as objects.
 
 ### Parameters
 

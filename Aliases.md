@@ -1,17 +1,11 @@
 # Aliases
 
-While aliases can be helpful for typing commands quickly and bridging the gap between different command-line environments, they can also make scripts less readable for users who are unfamiliar with the specific aliases. When writing scripts that will be shared with others or used in a production environment, it's generally best to use the full cmdlet names for clarity and maintainability.
+PowerShell aliases are short, alternative names for cmdlets, functions, or scripts. They are designed to save time and make it easier for users familiar with other scripting languages or command-line environments to use PowerShell more efficiently. Aliases are particularly useful for commonly used cmdlets, as they provide a shorthand way to execute them without typing the full cmdlet name.
 
-With that said (and I personally almost never use aliases), here is an overview of aliases in Powershell
-
-Aliases are short, alternative names for cmdlets, functions, or scripts. They are designed to save time and make it easier for users familiar with other scripting languages or command-line environments to use PowerShell more efficiently. Aliases are particularly useful for commonly used cmdlets, as they provide a shorthand way to execute them without typing the full cmdlet name.
-
-For example:
-
+For example, instead of typing:
 `Get-ChildItem -Path "C:\Support"`
 
-can be stated using an alias `gci`
-
+You can use the alias gci:
 `gci "C:\Support"`
 
 PowerShell comes with several built-in aliases for common cmdlets. These aliases are designed to make PowerShell more accessible to users familiar with other command-line environments, such as Unix-like shells or the Windows Command Prompt. Some examples of built-in aliases include:
@@ -28,11 +22,16 @@ PowerShell comes with several built-in aliases for common cmdlets. These aliases
 
 `ls` for `Get-ChildItem` (similar to Unix-like shells)
 
-When working with the console I use cd, cls, and ls all the time.  In scripts, I do not use those aliases at all.  
+When working interactively in the console, aliases like cd, cls, and ls can be quite convenient. However, when writing scripts that will be shared with others or used in a production environment, it's generally best to use the full cmdlet names for clarity and maintainability. Using aliases in scripts can make the code less readable for others.
 
-In script I typically use the full cmdlet name and I typically name all of the parameters I am using when writing scripts.
+To view a list of all available aliases in PowerShell, you can use the `Get-Alias` cmdlet:
 
-Using aliases can make the code less readable for others.
+You can also create your own custom aliases using the New-Alias cmdlet. For example, to create an alias lt for the Get-ChildItem cmdlet with the -Directory switch, you can use the following command:
+`New-Alias -Name lt -Value "Get-ChildItem -Directory"`
 
-You can also make your own aliases.  That's not something I will go into but just know you can.
+Now you can use lt as a shorthand for listing directories:
+`lt "C:\Support"`
 
+Keep in mind that while custom aliases can be helpful for personal use, they should be used sparingly in shared scripts to maintain readability and compatibility for others.
+
+In summary, aliases are a useful feature in PowerShell that can help streamline your command-line experience, especially when working interactively in the console. However, it's important to use them judiciously in scripts to ensure that your code remains clear and easy to understand for others. When writing scripts, try to use the full cmdlet names and specify parameter names whenever possible to improve readability and maintainability.

@@ -53,7 +53,7 @@ Output in the console
 ```
 CONVERT THIS TEXT
 ```
-In the above we defined a new function named Convert-ToUpperCase and defined that it takes one parameter, $strigValue.  When we go to use the function the parameter name will be the parameter name we defined without the dollar sign.  We defined the parameter as $stringValue but to use it is -stringValue.
+In the above we defined a new function named Convert-ToUpperCase and defined that it takes one parameter, `$stringValue`.  When we go to use the function the parameter name will be the parameter name we defined without the dollar sign.  We defined the parameter as $stringValue but to use it is -stringValue.
 
 ### Returning values
 
