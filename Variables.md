@@ -2,11 +2,11 @@
 
 Variables in PowerShell are used to store and manipulate data. They can hold different types of data, such as strings, numbers, arrays, and objects.
 
-Variable names start with a $ and can be any text characters you want after the $.  Variables should be properly cased (discussed below) and named in such a way as to convey meaning regarding the value it holds.  For example, let's say we are going to read the contents of a book from a file into a variable.  What should we name the variable?  How about $bookContents?  Or even $book.  It doesn't matter, just pick something that makes sense when you look at it later.
+Variable names start with a `$` and can be any text characters you want after the `$`.  Variables should be properly cased (discussed below) and named in such a way as to convey meaning regarding the value it holds.  For example, let's say we are going to read the contents of a book from a file into a variable.  What should we name the variable?  How about `$bookContents`?  Or even `$book`.  It doesn't matter, just pick something that makes sense when you look at it later.
 
 `$newFile`
 
-Above we created a new variable called $newFile
+Above we created a new variable called `$newFile`
 
 Normally when we create the variable, we also assign it a value
 
