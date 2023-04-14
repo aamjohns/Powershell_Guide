@@ -8,7 +8,7 @@ PowerShell is a powerful scripting language and command-line shell developed by 
 
 •	[Launching PowerShell](Powershell_and_Powershell_ISE.md)
 
-•	[PowerShell Console and Integrated Scripting Environment (ISE)](Powershell_and_Powershell_ISE#powershell_ise.md)
+•	[PowerShell Console and Integrated Scripting Environment (ISE)](Powershell_and_Powershell_ISE.md#powershell_ise)
 
 •	[Basic navigation and commands (Get-Command, Get-Help, Get-Member)](Help.md)
 
