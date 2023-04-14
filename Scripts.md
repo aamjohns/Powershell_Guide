@@ -233,8 +233,8 @@ foreach($setting in $settings)
     $printer = New-Object -TypeName PSObject -Property ([ordered]@{
 
             'Name' = $name
-			'Share'	       = $sharePath
-			'Port' = $portName
+	    'Share' = $sharePath
+	    'Port' = $portName
             'MakeAndModel' = $makeAndModel
             'Building' = $building
             'Room' = $room
