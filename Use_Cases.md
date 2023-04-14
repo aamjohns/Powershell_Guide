@@ -26,7 +26,7 @@ PowerShell scripts have a wide range of real-world use cases, as they can be use
 
 - API access: Powershell script can be use to get and put information from 3rd party APIs.
 
-Here's some scripts I have written/used to show examples of real world use of scripts.
+Here's a script I have written/used to show examples of real world use of scripts.
 
 This script creates a scheduled task on a system that runs once every 4 weeks at 9 am, if the start time is missed, then the task is started as soon as available.
 ```
