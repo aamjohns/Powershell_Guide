@@ -172,9 +172,9 @@ function Write-Log
     { 
     }
 }
-function Get-PrinterIPAddress($printerName) # Connect to iu-ota-prnt01 and get the portname of the printer
+function Get-PrinterIPAddress($printerName) # Connect to server and get the portname of the printer
 {
-	$(get-printer -ComputerName iu-ota-prnt01 -Name $printerName).PortName
+	$(get-printer -ComputerName MyPrintServer -Name $printerName).PortName
 }
 #region startlog
 #=========================================================
@@ -247,7 +247,7 @@ foreach($setting in $settings)
     Write-Log -Message "Status=$($printer.Status) Name=$($printer.Name) Share=$($printer.Share) Make and Model=$($printer.MakeAndModel) `
     Building=$($printer.Building) Room=$($printer.Room) Department=$($printer.Department) Group=$($printer.Group)" -Path $scriptLog -Level Info
 }
-$printers | Export-Xlsx -Path '\\iu-ota-mdt.ads.iu.edu\Printers$\Printers.xlsx' -ClearSheet
+$printers | Export-Xlsx -Path '\\ADifferentServer\Printers$\Printers.xlsx' -ClearSheet
 
 ```
 This script may not be the best choice due to its lack of internal comments.  But we can discuss it here.
