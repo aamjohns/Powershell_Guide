@@ -30,9 +30,9 @@ Here's a script I have written/used to show examples of real world use of script
 
 This script creates a scheduled task on a system that runs once every 4 weeks at 9 am, if the start time is missed, then the task is started as soon as available.
 ```
-#---------------------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------
 # Create new scheduled task to run CIS-Benchmarks
-#---------------------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------
 $path_to_script = 'C:\Support\CIS-Benchmark-4_15_2\CIS-Benchmark-4_15_2.ps1'
 $action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument $path_to_script
 $trigger = New-ScheduledTaskTrigger -Weekly -WeeksInterval 4 -DaysOfWeek Monday -At 9am
